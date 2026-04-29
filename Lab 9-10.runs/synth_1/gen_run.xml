@@ -1,30 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a12ticsg325-1L" LaunchTime="1777465757" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/HA.dcp">
-  <File Type="PA-TCL" Name="Program_Counter.tcl"/>
-  <File Type="REPORTS-TCL" Name="Program_Counter_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Program_Counter.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="Program_Counter_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="Program_Counter_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Program_Counter_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Program_Counter.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Program_Counter_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Program_Counter_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a12ticsg325-1L" LaunchTime="1777467023" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/HA.dcp">
+  <File Type="PA-TCL" Name="Add_Sub_Unit.tcl"/>
+  <File Type="REPORTS-TCL" Name="Add_Sub_Unit_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Add_Sub_Unit.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="Add_Sub_Unit_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="Add_Sub_Unit_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Add_Sub_Unit_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Add_Sub_Unit.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Add_Sub_Unit_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Add_Sub_Unit_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/FA.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/HA.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/TB_Adder_3_B.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -41,13 +27,39 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Program_Counter.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Comparator.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Add_Sub_Unit.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Program_Counter"/>
+      <Option Name="TopModule" Val="Add_Sub_Unit"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

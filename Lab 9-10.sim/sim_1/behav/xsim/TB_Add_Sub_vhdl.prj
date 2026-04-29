@@ -1,9 +1,9 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
+"../../../../Lab 9-10.srcs/sources_1/new/Add_Sub_Unit.vhd" \
 "../../../../Lab 9-10.srcs/sources_1/new/FA.vhd" \
 "../../../../Lab 9-10.srcs/sources_1/new/HA.vhd" \
-"../../../../Lab 9-10.srcs/sources_1/new/TB_Adder_3_B.vhd" \
-"../../../../Lab 9-10.srcs/sim_1/new/TB_Adder_3_B.vhd" \
+"../../../../Lab 9-10.srcs/sim_1/new/TB_Add_Sub.vhd" \
 
 # Do not sort compile order
 nosort
